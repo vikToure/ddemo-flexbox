@@ -233,8 +233,25 @@ header {
 }
 
 .section-7c {
-  margin: 40pt;
+  margin: 0;
+  height: 5rem;
 }
+
+.section-7c button {
+  width: 150px;
+  padding: .7em;
+  border-radius: 1.3rem;
+  background-color: black;
+  color: white;
+  border: unset;
+  text-transform: uppercase;
+}
+
+.section-7c button:hover{
+  background-color: #d9b1b3;
+  cursor: pointer;
+}
+
 .custom-font .p1 {
   font-size: 2rem;
   font-weight: normal;
@@ -250,66 +267,70 @@ header {
   margin: 20pt;
 }
 
-.section-8 {
-  width: 100%;
-  display: flex;
-}
 .sect-subscribe {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 15px;
+  height: 100vh;
+} 
+
+.subscribe-img,.subscribe-text {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 50%;
+  height: 130vh;
 }
+
 .subscribe-img {
-  height: 500px;
-  display: flex;
-  justify-content: flex-start;
+  background-image: url('../img/subscribe.jpeg');
   background-repeat: no-repeat;
-  object-fit: cover;
-  margin: 0;
-  border-radius: 0;
+  background-size: cover;
+  background-position: center;
 }
-.subscribe {
-  display: flex;
-  justify-content: right;
-  padding: 20px;
-  margin-right: 0;
-}
-
-.form-2 {
-  display: flex;
+.subscribe-text {
   justify-content: center;
-  margin: 0;
+  text-align: center;
+  margin-top: 40px;
+} 
+
+.subscribe-heading {
+  position: relative;
+  text-align: center;
+  font-size: 3.5rem;
+  font-style: italic;
+  font-weight: 800;
+}
+.subscribe-heading::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 75%;
+  height: 8px;
+  background-color: #d9b1b3;
 }
 
-.form-2a {
-  display: flex;
-}
-
-.form-2 .button {
-  display: flex;
-  align-items: center;
-}
-
-.form-2a input {
-  display: flex;
+.input-container input {
   border: 1px solid black;
   padding: 15px;
   margin: 10px 0 10px 10px;
 }
-.subscribe h6{
-  text-align: center;
-  font-size: 2rem;
-  font-style: italic;
+
+.form-2a button {
+  width: 150px;
+  padding: .7em;
+  margin-top: 10px;
+  border-radius: 1.3rem;
+  background-color: black;
+  color: white;
+  border: unset;
 }
-.sample p {
+.subscribe-text p {
   text-align: center;
-  margin: 10px;
+  margin: 40px;
 }
 .logos {
   display: flex;
+  margin-top: 40px;
   justify-content: center;
-  gap: 7px;
-  margin: 5px;
+  gap: 7px
 }
 
